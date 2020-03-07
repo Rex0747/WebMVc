@@ -1,0 +1,22 @@
+﻿
+
+@{
+    ViewData["Title"] = "Viewhola";
+    string m1 =@ViewData["Message"].ToString();
+    string m2 = @ViewData["Message2"].ToString();
+}
+
+<h1>@m1</h1>
+<h1>@m2</h1>
+<h2>@ViewBag.nombre</h2>
+<h2>@ViewBag.apellido</h2>
+<h3>@Model[0]</h3>
+
+@foreach( string item in Model)
+{
+    <tr>
+        <td>
+            @item<br>
+        </td>
+    </tr>
+}
